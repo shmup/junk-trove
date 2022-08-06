@@ -1,29 +1,34 @@
-IRSSI / TWITCH
+# IRSSI / TWITCH
 
-Here's a method to chat in a twitch #channel with IRSSO
+Here's a method to chat in a twitch #channel with IRSSI
+
 -------------------------------------------------------
 
 Get your oauth token here: https://twitchapps.com/tmi/
 
-Put these blocks into the relevant sections:
-
-servers = {
-  {
+**Server block**
+```
+server = {
     address = "irc.chat.twitch.tv";
     chatnet = "twitch";
     port = "6697";
-    password = "oauth:change_me";
+    password = "oauth:changeme";
     use_ssl = "yes";
     ssl_verify = "yes";
     autoconnect = "no";
-  }
 }
+```
 
+**Chatnet block**
+```
 chatnets = {
   twitch = {
     type = "IRC";
     nick = "your_twitch_username";
-    autosendcmd = "/quote CAP REQ :twitch.tv/membership";
   };
-};
+}
+```
 
+I like to `/connect twitch` and `/disconnect twitch` as necessary.
+
+Alternatively, just set `autoconnect = "yes"`.
