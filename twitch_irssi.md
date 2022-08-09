@@ -1,8 +1,6 @@
-# IRSSI / TWITCH
+## IRSSI / TWITCH
 
-Here's a method to chat in a twitch #channel with IRSSI
-
--------------------------------------------------------
+**Here's a method to chat in a twitch #channel with IRSSI**
 
 Get your oauth token here: https://twitchapps.com/tmi/
 
@@ -32,3 +30,5 @@ chatnets = {
 I like to `/connect twitch` and `/disconnect twitch` as necessary.
 
 Alternatively, just set `autoconnect = "yes"`.
+
+Anyway, now you can `/j #twitch_channel_name`
