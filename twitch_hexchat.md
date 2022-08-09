@@ -1,4 +1,4 @@
-## HEXCHAT / TWITCH
+dk## HEXCHAT / TWITCH
 
 **Here's a method to chat in a twitch #channel with HexChat**
 
@@ -12,15 +12,15 @@
 
 6. Uncheck `Use global user information` (you'll be using your twitch nick).
 
-7. Change the `Login Method` to `Server password (/PASS password)`.
+7. Set the `Nick` to your Twitch nick.
 
-8. In `Password` paste in the token generated here: https://twitchapps.com/tmi/
+8. Change the `Login Method` to `Server password (/PASS password)`.
+
+9. In `Password` paste in the token generated here: https://twitchapps.com/tmi/
 
 _Additionally I'd uncheck `Connect to this network automatically`._
 
-_You only need to set the `Nick name` which needs to be your Twitch nick._
-
-9. Click `Close` then `Connect` and in the window that opens, you can type `/join #twitch_channel_name_here`.
+10. Click `Close` then `Connect` and in the window that opens, you can type `/join #twitch_channel_name_here`.
 
     **If this is your first time running**, an extra window will pop up asking you if you want to join a channel. I like to tell this to never open and use the `/join` method (seen in 2nd image below).
 
